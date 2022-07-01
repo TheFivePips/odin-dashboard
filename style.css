@@ -1,16 +1,19 @@
 .container{
-    width: 1000px;
-    height: 900px;
+    /* width: 1000px;
+    height: 900px; */
     border: 1px solid black;
     display: grid;
-    grid-template: 1fr 5fr/ 1fr 3fr 1fr;
+    grid-template: 0.2fr 5fr/ 1fr 3fr 1fr;
+    background-color: #A7ADC6;
+
 }
 header{
     grid-area: 1/2/2/4;
-    background-color: aqua;
+    background-color: #5F4B66;
+    color:white;
     display: grid;
     grid-template: 1fr 1fr/ repeat(3,1fr);
-    height: 150px;
+    /* height: 150px; */
 }
 
 .searchbar{
@@ -69,13 +72,21 @@ form button{
     align-items: center;
     
 }
+a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
 
 
 .dashboard{
     grid-area: 1/1/3/2;
-    background-color: red;
+    background-color: rgb(44, 19, 32);
+    color: white;
     display: grid;
-    grid-template: 1fr 2fr 1fr/ 1fr;
+    grid-template: 0.5fr 2fr 1fr/ 1fr;
     place-items: center;
 }
 
@@ -109,6 +120,9 @@ flex-direction: column;
 
 
 .projects{
+    background-color: #A7ADC6;
+    grid-area: 2/2/3/3;
+    color: white;
     display: grid;
     grid-template: 0.5fr 8fr/ 1fr;
     
@@ -134,32 +148,37 @@ flex-direction: column;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.projects{
-    grid-area: 2/2/3/3;
-    background-color: green;
-}
 .sidebar{
     grid-area: 2/3/3/4;
-    background-color: gold;
+    background-color: #A7ADC6;
+    color: white;
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
 }
 
+.announcements, .trending{
+border: 1px solid black;
+border-radius: 10px;
+background-color: #8797AF;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.slide{
+    text-align: center;
+}
 
-
-
-
-
+.person{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    
+}
 
 
 
