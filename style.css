@@ -71,27 +71,61 @@ form button{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .dashboard{
     grid-area: 1/1/3/2;
     background-color: red;
+    display: grid;
+    grid-template: 1fr 2fr 1fr/ 1fr;
+    place-items: center;
 }
+
+
+.dash-links{
+display: flex;
+flex-direction: column;
+
+}
+
+.dash-links div{
+    display: flex;
+    
+}
+.dash-links div h5{
+    position: relative;
+    bottom: 15px;
+    left: 15px
+}
+
+
+.config div{
+    display: flex;
+    padding-right: 40px;
+}
+.config div h5{
+    position: relative;
+    bottom: 15px;
+    left: 15px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .projects{
     grid-area: 2/2/3/3;
     background-color: green;
