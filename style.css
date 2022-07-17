@@ -14,6 +14,7 @@ header{
     display: grid;
     grid-template: 1fr 1fr/ repeat(3,1fr);
     /* height: 150px; */
+    
 }
 
 .searchbar{
@@ -136,16 +137,29 @@ flex-direction: column;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
 }
- .card{
+
+.card{
     border: 1px solid black;
     border-radius: 10px;
-    /* box-shadow: 5px; */
+    box-shadow: 3px 3px rgb(58, 58, 58);
     margin: 10px;
     text-align: center;
- }
+    background-color: #5F4B66;
+    position: relative;
+}
 
+.icons{
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    align-content: baseline;
+}
 
-
+i{
+    padding: 2px;
+    
+}
 
 
 .sidebar{
@@ -157,18 +171,33 @@ flex-direction: column;
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    
    
 }
 
 .announcements, .trending{
-border: 1px solid black;
-border-radius: 10px;
-background-color: #8797AF;
-display: flex;
+
+/* display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: center; */
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 6fr ;
 }
+.announcements-cards, .people{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #8797AF;
+    box-shadow: 2px 2px rgb(58, 58, 58);
+    margin: 5px;
+}
+.announcments-title, .trending-title{
+grid-area: 1/1/2/2;
+margin-left: 1rem;
+}
+
+
 .slide{
     text-align: center;
 }
@@ -176,12 +205,13 @@ align-items: center;
 .person{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 10px;
+    padding: 10px;
     
 }
 
-
-
+.person > i {
+    margin: 5px;
+}
 
 
 
